@@ -1,10 +1,10 @@
 /*
 Ejercicio completo con HTML y CSS
-  (hecho)  1.- Crear un documento HTML y vincularlo con un CSS
+  (hecho)1.- Crear un documento HTML y vincularlo con un CSS
   (hecho)2.- Crear una estructura HTML que cuente con un contenedor General,
       cabecera, menu,  barra lateral, seccion de contenido principal,
       elementos dentro del contenedor principal, Footer.
-  3.- El contenido debe estar dentro del contenedor general y su ancho
+  (hecho)3.- El contenido debe estar dentro del contenedor general y su ancho
       sera de 1200px y estar centrado
   4.- Header debe ocupar el 100% del ancho y tener un texto grande centrado
   5.- Menu debe terner los elementos uno al lado del otro
@@ -20,4 +20,13 @@ Ejercicio completo con HTML y CSS
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+}
+
+#general {
+  width: 1200px;
+  border: 1px solid #b83030;
+  margin: 0px auto;
+  margin-top: 20px;
+
+
 }
