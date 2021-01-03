@@ -122,6 +122,15 @@ Ejercicio completo con HTML y CSS
     D Difuminado
     C Color
   */
+
+  border-radius: 50px 10px 4px 61px;
+  /*
+    border-radius: I D AD AI;
+    I Izquierda
+    D Derecha
+    AD Abajo Derecha
+    AI Abajo Izquierda
+   */
 }
 
 .sombra-interior {
