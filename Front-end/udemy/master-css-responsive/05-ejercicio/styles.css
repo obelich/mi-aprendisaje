@@ -91,17 +91,41 @@ Ejercicio completo con HTML y CSS
   border-bottom: 1px solid #ccc;
   padding: 15px;
   color: #4444;
+  text-shadow: 1px 1px 2px gray;
+  /* Sombra Exterior
+  text-shadow: X Y D C;
+  X Horizontal
+  Y Vertical
+  D Difuminado
+  C Color
+  */
 }
 
 #contenido .caja {
   width: 40%;
   height: 250px;
-  background-color: red;
-  border: 5px solid blue;
-  color: white;
+  background-color: #ccc;
+  border: 1px solid gray;
+  color: #4444;
   float: left;
   margin: 20px;
   margin-left: 40px;
+  text-align: center;
+  line-height: 200px;
+  text-transform: uppercase;
+/*  Para aplicarle sombra usamos */
+  box-shadow: 5px 5px 15px gray;
+  /* Sombra Exterior
+    box-shadow: X Y D C;
+    X Horizontal
+    Y Vertical
+    D Difuminado
+    C Color
+  */
+}
+
+.sombra-interior {
+  box-shadow: 0px 0px 20px gray inset !important;
 }
 
 footer {
