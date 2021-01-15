@@ -1,2 +1,6 @@
 .idea
 /.idea
+/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/test/dummy/tmp/
+/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/test/dummy/cache
+/Back-end/Ruby/Rails/aprender-generar-engine/unicorn/tmp/
+/Back-end/Ruby/Rails/aprender-generar-engine/unicorn/node_modules/
