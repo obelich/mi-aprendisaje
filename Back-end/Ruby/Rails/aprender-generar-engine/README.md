@@ -69,7 +69,36 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 6.1.1"
 end
-
 ```
 
 Una vez que ya se modifico el archivo ya podemos ejecutar `bundle install`
+
+# Generar secciones en este ejemplo un blog
+
+en cuanto al trabajo en general es rails al uso por ejemplo generar el CRUD de articulos
+
+```
+rails generate scaffold article title:string text:text
+```
+
+# Rutas
+
+Ahora generamos que `root_path` sea el index de articulos `config/routes.rb`
+
+```
+root to: "articles#index"
+```
+
+# Generando Sección de comentarios
+
+iniciando con la generación del modelo con su respectiva migración
+
+```
+rails generate model Comment article_id:integer text:text
+```
+
+Ahora corremos la migración
+
+```
+```
+

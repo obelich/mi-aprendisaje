@@ -1072,3 +1072,47 @@ Processing by Blorgh::ArticlesController#show as HTML
 Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 5622)
 
 
+Started GET "/" for ::1 at 2021-01-15 09:26:46 -0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/obelich/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/obelich/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.5ms | Allocations: 337)
+Completed 200 OK in 32ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 2523)
+
+
+Started GET "/blog" for ::1 at 2021-01-15 09:26:55 -0800
+Processing by Blorgh::ArticlesController#index as HTML
+  Rendering layout /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/layouts/blorgh/application.html.erb
+  Rendering /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/articles/index.html.erb within layouts/blorgh/application
+  [1m[36mBlorgh::Article Load (0.3ms)[0m  [1m[34mSELECT "blorgh_articles".* FROM "blorgh_articles"[0m
+  Rendered /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/articles/index.html.erb within layouts/blorgh/application (Duration: 6.6ms | Allocations: 4443)
+  Rendered layout /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/layouts/blorgh/application.html.erb (Duration: 14.3ms | Allocations: 6549)
+Completed 200 OK in 25ms (Views: 15.7ms | ActiveRecord: 0.6ms | Allocations: 10125)
+
+
+Started GET "/blog/articles/1" for ::1 at 2021-01-15 09:32:22 -0800
+Processing by Blorgh::ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlorgh::Article Load (0.2ms)[0m  [1m[34mSELECT "blorgh_articles".* FROM "blorgh_articles" WHERE "blorgh_articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/layouts/blorgh/application.html.erb
+  Rendering /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/articles/show.html.erb within layouts/blorgh/application
+  [1m[36mBlorgh::Comment Load (0.3ms)[0m  [1m[34mSELECT "blorgh_comments".* FROM "blorgh_comments" WHERE "blorgh_comments"."article_id" = ?[0m  [["article_id", 1]]
+  Rendered collection of /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/comments/_comment.html.erb [1 times] (Duration: 0.9ms | Allocations: 187)
+  Rendered /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/comments/_form.html.erb (Duration: 19.9ms | Allocations: 2885)
+  Rendered /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/articles/show.html.erb within layouts/blorgh/application (Duration: 67.7ms | Allocations: 11615)
+  Rendered layout /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/layouts/blorgh/application.html.erb (Duration: 69.8ms | Allocations: 13403)
+Completed 200 OK in 98ms (Views: 73.3ms | ActiveRecord: 0.9ms | Allocations: 18317)
+
+
+Started GET "/blog/" for ::1 at 2021-01-15 10:10:16 -0800
+Processing by Blorgh::ArticlesController#index as HTML
+  Rendering layout /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/layouts/blorgh/application.html.erb
+  Rendering /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/articles/index.html.erb within layouts/blorgh/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBlorgh::Article Load (0.1ms)[0m  [1m[34mSELECT "blorgh_articles".* FROM "blorgh_articles"[0m
+  Rendered /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/blorgh/articles/index.html.erb within layouts/blorgh/application (Duration: 4.6ms | Allocations: 2882)
+  Rendered layout /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/aprender-generar-engine/blorgh/app/views/layouts/blorgh/application.html.erb (Duration: 7.4ms | Allocations: 4510)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 5127)
+
+
