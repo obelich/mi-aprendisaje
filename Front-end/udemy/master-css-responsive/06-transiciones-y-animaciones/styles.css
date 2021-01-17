@@ -1,0 +1,62 @@
+* {
+  font-family: 'Roboto Thin', SansSerif ;
+}
+
+ul li {
+  font-size: 20px;
+}
+
+/*Selecciona el primer hijo*/
+ul  li:first-child {
+  color: purple;
+font-weight: bold;
+}
+
+/*Con este se puede escoger un hijo en concreto 1 A X donde X es el hijo seleccionado*/
+ul  li:nth-child(1) {
+  color: orange;
+  font-weight: bold;
+}
+
+/*Selecciona el ultimo hijo*/
+ul  li:last-child {
+  color: gray;
+  font-weight: bold;
+}
+
+
+#mi-enlace {
+  font-size: 30px;
+  color: lightsalmon;
+}
+
+/*Esto es cuando no se ha visitado el enlace*/
+#mi-enlace:link {
+  color: red;
+}
+
+/*Esto es cuando se ha visitado el enlace*/
+#mi-enlace:visited {
+  color: orangered;
+}
+
+/*Esto se puede aplicar a cualquier elemento html*/
+/*Esto es cuando le pones el mouse encima*/
+#mi-enlace:hover {
+  color: blue;
+}
+
+/*Esto es cuando se esta pulsando en el elemento*/
+#mi-enlace:active {
+  color: green;
+  font-family: arial, sans-serif;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input[type="text"]:focus {
+  border: 4px dashed red;
+}

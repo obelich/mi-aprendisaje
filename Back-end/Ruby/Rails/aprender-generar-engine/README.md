@@ -2,6 +2,8 @@
 
 Este directorio es para la practica de generar un Motor ( Engine )
 
+https://guides.rubyonrails.org/engines.html
+
 El comando para iniciar el trabajo es
 
 ```
