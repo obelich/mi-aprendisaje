@@ -1,5 +1,33 @@
 # Aprender a generar Engine
 
+# Blorgh con --mountable
+
+Este engine es generado usando mountable
+
+```
+rails plugin new [NombrePlugin] --mountable
+```
+
+Ejemplo:
+```
+rails plugin new blorgh --mountable
+```
+
+
+
+# Ahora generar con enginex
+
+```
+enginex [NombrePlugin]
+```
+
+Ejemplo:
+```
+enginex team_page
+```
+
+
+
 Este directorio es para la practica de generar un Motor ( Engine )
 
 https://guides.rubyonrails.org/engines.html
