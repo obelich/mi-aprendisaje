@@ -6,3 +6,32 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 55ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 4175)
 
 
+Started GET "/about" for 127.0.0.1 at 2021-02-06 20:28:14 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by AboutController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 295)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/obelich/Git/mi-aprendisaje/Back-end/Ruby/Rails/GoRails/rails_for_beginners/scheduled_tweets/public/packs
+[Webpacker] warning ../../../../../../../package.json: No license field
+
+[Webpacker] Hash: 415a948d492e21802f43
+Version: webpack 4.46.0
+Time: 2575ms
+Built at: 02/06/2021 8:28:19 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4938.6ms | Allocations: 11292)
+Completed 200 OK in 4953ms (Views: 4943.0ms | ActiveRecord: 0.0ms | Allocations: 14343)
+
+
