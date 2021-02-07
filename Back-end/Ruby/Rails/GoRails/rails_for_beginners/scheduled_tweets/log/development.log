@@ -55,3 +55,24 @@ Processing by MainController#index as HTML
 Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 3552)
 
 
+Started GET "/" for ::1 at 2021-02-07 11:58:49 -0800
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 5327)
+Completed 200 OK in 50ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 8376)
+
+
+Started GET "/" for ::1 at 2021-02-07 11:59:58 -0800
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3204)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 4449)
+
+
