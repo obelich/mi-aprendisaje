@@ -35,6 +35,42 @@ This is what gets sent back to the browser and displayed
 
 Decide how to process a request and define a response
 
+## Comandos
+
+
+
+Ver lista de rutas
+
+```
+rails routes
+```
+
+
+Generar el Model user
+
+```
+rails g model User email:string password_digest:string
+```
+
+
+Correr las migraciones
+
+```
+rails db:migrate
+```
+
+Hacer rollback a las migraciones
+
+```
+rails db:rollback
+```
+
+Generar un rollback y correr la migración de nuevo la ultima migración
+
+```
+rails db:migrate:redo
+```
+
 # Resources
 
 http:  https://developer.mozilla.org/en-US/docs/Web/HTTP
