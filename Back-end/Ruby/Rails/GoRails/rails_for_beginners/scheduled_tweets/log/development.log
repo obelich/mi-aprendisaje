@@ -1100,3 +1100,123 @@ Processing by RegistrationsController#new as HTML
 Completed 200 OK in 20ms (Views: 18.2ms | Allocations: 6229)
 
 
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:14:52 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 28)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 777)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:16:42 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 600)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:17:08 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 26)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 603)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-02-08 12:17:10 -0800
+Processing by RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4090)
+Completed 200 OK in 27ms (Views: 13.5ms | ActiveRecord: 0.4ms | Allocations: 7937)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:17:19 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"obelich@protonmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 403)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:17:34 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"obelich@protonmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 26)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 622)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-02-08 12:28:57 -0800
+Processing by RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/registrations_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 266)
+  Rendered shared/_flash.html.erb (Duration: 0.9ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 5165)
+Completed 200 OK in 35ms (Views: 26.2ms | ActiveRecord: 0.8ms | Allocations: 10155)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:29:06 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"obelich", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1395)
+
+
+  
+NoMethodError (undefined method `reqyure' for #<ActionController::Parameters {"authenticity_token"=>"1k56DDmop9SB7-RMwGSx_EtzNjRZYGXBIBj5YQDyZnHQ12XQotK_e5SR0YYY520fYr7_aKoAwUlHVaSCqaTKCg", "user"=>{"email"=>"obelich", "password"=>"oscarm", "password_confirmation"=>"oscarm"}, "commit"=>"Sign Up", "controller"=>"registrations", "action"=>"create"} permitted: false>
+Did you mean?  require):
+  
+app/controllers/registrations_controller.rb:23:in `user_params'
+app/controllers/registrations_controller.rb:10:in `create'
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:29:22 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"obelich", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/registrations_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1507)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4634)
+Completed 200 OK in 208ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 10237)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2021-02-08 12:29:35 -0800
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 266)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 5121)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6340)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2021-02-08 12:29:36 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  Rendering layout layouts/application.html.erb
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 110)
+  Rendered shared/_flash.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 6246)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 7336)
+
+
