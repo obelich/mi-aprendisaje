@@ -1,5 +1,21 @@
-.idea
-/.idea
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+
 /Back-end/Ruby/Rails/aprender-generar-engine/blorgh/test/dummy/tmp/
 /Back-end/Ruby/Rails/aprender-generar-engine/blorgh/test/dummy/cache
 /Back-end/Ruby/Rails/aprender-generar-engine/unicorn/tmp/
