@@ -1,14 +1,10 @@
+//Importaciones de terceros
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new MyApp());
-}
+// Importaciones de nuestros archivos
+// import 'src/app.dart';
+import 'package:contador/src/app.dart';
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Center(child: Text('Hola Mundo')),
-    );
-  }
+void main() {
+  runApp(MyApp());
 }
