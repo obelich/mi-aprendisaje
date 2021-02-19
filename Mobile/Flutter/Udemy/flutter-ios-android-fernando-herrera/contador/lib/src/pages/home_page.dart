@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-
-final estiloTexto = new TextStyle(fontSize: 25);
-
+  final estiloTexto = new TextStyle(fontSize: 25);
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Titulo'),
@@ -22,9 +19,12 @@ final estiloTexto = new TextStyle(fontSize: 25);
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print('Hola Mundo');
+        },
+      ),
     );
-
   }
-
-
 }
