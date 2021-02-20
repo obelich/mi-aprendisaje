@@ -63,4 +63,6 @@ class _ContadorPageState extends State<ContadorPage> {
       _conteo = 0;
     });
   }
+
+  
 }
