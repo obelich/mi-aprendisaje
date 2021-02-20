@@ -14,28 +14,33 @@ class _ContadorPageState extends State<ContadorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Stateful'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Número de tabs:', style: _estiloTexto),
-            Text('$_conteo', style: _estiloTexto),
-          ],
+        appBar: AppBar(
+          title: Text('Stateful'),
+          centerTitle: true,
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {
-          print('Hola Mundo');
-          _conteo++;
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('Número de tabs:', style: _estiloTexto),
+              Text('$_conteo', style: _estiloTexto),
+            ],
+          ),
+        ),
+        floatingActionButton: _crearBotones());
+  }
 
-          setState(() {});
-        },
-      ),
+  Widget _crearBotones() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+        SizedBox(width: 30.0,),
+        FloatingActionButton(onPressed: null, child: Icon(Icons.exposure_zero)),
+        Expanded(child: SizedBox()),
+        FloatingActionButton(onPressed: null, child: Icon(Icons.remove)),
+        SizedBox(width: 10.0),
+        FloatingActionButton(onPressed: null, child: Icon(Icons.add)),
+      ],
     );
   }
 }
