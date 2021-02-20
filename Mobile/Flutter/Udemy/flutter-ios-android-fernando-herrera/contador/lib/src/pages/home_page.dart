@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   final estiloTexto = new TextStyle(fontSize: 25);
+  final conteo = 11;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Número de tabs:', style: estiloTexto),
-            Text('0', style: estiloTexto),
+            Text('$conteo', style: estiloTexto),
           ],
         ),
       ),
