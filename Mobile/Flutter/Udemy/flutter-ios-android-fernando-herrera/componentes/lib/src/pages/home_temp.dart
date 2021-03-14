@@ -28,11 +28,21 @@ class HomePageTemp extends StatelessWidget {
   }
 
   List<Widget> _crearItemsCorta() {
-    var widgets = opciones.map((item) {
-      return ListTile(title: Text(item + '!!'));
+    return opciones.map((item) {
+      return Column(
+        children: [
+          ListTile(title: Text(item + '!!'),
+          subtitle: Text('Cualquier cosa'),
+          leading: Icon(Icons.account_balance),
+          trailing: Icon(Icons.arrow_right),
+          onTap: (){},
+          
+          ),
+        Divider(),
+        ],
+      );
     }).toList();
 
-    return widgets;
   }
 
 // Final
