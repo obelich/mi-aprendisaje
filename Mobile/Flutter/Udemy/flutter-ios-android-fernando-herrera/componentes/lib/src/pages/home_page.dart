@@ -23,7 +23,11 @@ class HomePage extends StatelessWidget {
 
   List<Widget> _listaItems() {
     return [
-      ListTile(title: Text('Hola Mundo'),)
+      ListTile(title: Text('Hola Mundo'),),
+      Divider(),
+      ListTile(title: Text('Hola Mundo'),),
+      Divider(),
+      ListTile(title: Text('Hola Mundo'),),
     ];
   }
 }
