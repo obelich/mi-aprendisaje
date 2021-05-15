@@ -22,6 +22,18 @@ rails routes |grep home
 
 Con esto nos daria solo las rutas que contengan como nombre home
 
+## Parciales
+para generar un archivo parcial que se pueda utilizar la regla es que el nombre del archivo inicio con un `_` y que termine
+con `.html.erb`
+ejemplo
+```
+_header.html.erb
+```
+
+Para utilizar el parcial usamos 
+````
+<%= render 'home/header' %>
+```
 
 # Referencias
 
