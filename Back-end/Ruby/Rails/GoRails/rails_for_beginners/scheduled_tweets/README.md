@@ -1,78 +1,24 @@
 # README
 
-Este curso esta echo con Ruby 3.0.0 y Rails 6.1.1
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
+Things you may want to cover:
 
-# The Model View Controller (MVC Pattern)
+* Ruby version
 
+* System dependencies
 
-## Routes
-Matchers for the URL that is requested
+* Configuration
 
-GET for "/about"
+* Database creation
 
-I see you request "/about", we'll give that to the AboutController to handle
+* Database initialization
 
-## Models
-Database wrapper
+* How to run the test suite
 
-User
-* query for records
-* wrap individual records
+* Services (job queues, cache servers, search engines, etc.)
 
-## Views
+* Deployment instructions
 
-Your response body content
-
-* HTML
-* CSV
-* PDF
-* XML
-
-This is what gets sent back to the browser and displayed
-
-## Controllers
-
-Decide how to process a request and define a response
-
-## Comandos
-
-
-
-Ver lista de rutas
-
-```
-rails routes
-```
-
-
-Generar el Model user
-
-```
-rails g model User email:string password_digest:string
-```
-
-
-Correr las migraciones
-
-```
-rails db:migrate
-```
-
-Hacer rollback a las migraciones
-
-```
-rails db:rollback
-```
-
-Generar un rollback y correr la migración de nuevo la ultima migración
-
-```
-rails db:migrate:redo
-```
-
-# Resources
-
-http:  https://developer.mozilla.org/en-US/docs/Web/HTTP
-
-REST: https://www.csalmeida.com/log/introduction-to-the-rest-architecture/
+* ...
