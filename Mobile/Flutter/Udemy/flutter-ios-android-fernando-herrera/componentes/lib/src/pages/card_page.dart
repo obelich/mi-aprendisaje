@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AvatarPage extends StatelessWidget {
+class CardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Avatar Page'),
+        title: Text('Cards')
       ),
     );
   }
-
 }
