@@ -8,5 +8,9 @@ RSpec.describe Owner, type: :model do
       should validate_inclusion_of(:type).in_array(%w[Employee Owner])
     end
 
+    it 'Validar si existe ralacion con store' do
+      should belong_to(:store)
+    end
+
   end
 end

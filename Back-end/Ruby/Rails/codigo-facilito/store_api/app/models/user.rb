@@ -1,5 +1,10 @@
 class User < ApplicationRecord
   has_secure_password
+  belongs_to :store
+  has_many :tokens
+
+  accepts_nested_attributes_for :store
+
   validates :email, :password_digest, :age, :type, presence: true
   validates :email, uniqueness: true
   validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }

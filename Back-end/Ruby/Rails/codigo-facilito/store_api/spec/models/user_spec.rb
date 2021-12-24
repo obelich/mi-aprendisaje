@@ -39,6 +39,10 @@ RSpec.describe User, type: :model do
       should validate_numericality_of(:age).is_less_than_or_equal_to(100)
     end
 
+    it 'Validar relacion con tokens' do
+      should have_many(:tokens)
+    end
+
 
   end
 end

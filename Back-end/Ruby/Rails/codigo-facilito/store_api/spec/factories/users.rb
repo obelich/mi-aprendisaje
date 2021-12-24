@@ -4,6 +4,7 @@ FactoryBot.define do
     age { 18 }
     password_digest { "MyString" }
     type { "test" }
+    store
   end
 
   factory :user_correct, class: 'User' do
